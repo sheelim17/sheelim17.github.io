@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Pretendard', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color:#F9F5EF;
+    transition:background-color 1s linear;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::-webkit-scrollbar {width: 8px;border-radius:12px;}
+::-webkit-scrollbar-thumb {background-color:rgba(0,0,0,.4);border-radius:12px;}
+::-webkit-scrollbar-track {background-color: rgba(0,0,0,.2);border-radius:12px;}
+
+section[data-scroll-section] {
+    height: calc(100vh);
+    overflow-x:hidden;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.count span {
+    font-weight: 700;
+    color:#dfd9cf;
+    position:absolute;
+    font-size: 50px;
+}
+.count .day1 {
+    font-size:100px;
+    left:10%;
+    top:10%;
+}
+.count .day2 {
+    font-size:80px;
+    left:60%;
+    top:80%;
+}
+.count .day3 {
+    font-size:30px;
+    left:30%;
+    top:60%;
+}
+
+.count .day4 {
+    font-size:70px;
+    left:80%;
+    top:60%;
+}
+
+.description {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description .text {
+    width:1000px;
+    height:600px;
+}
+
+.description h1 {
+    font-size:120px;
+    font-weight:700;
+    margin-bottom: 30px;
+    color: #F9F5EF
+}
+
+.description .scroll__text span {
+    color: #F9F5EF;
+    font-size: 42px;
+    line-height:52px;
+}
+
+.balloon__sec{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.balloon {
+    position:absolute;
+}
+.balloon.animate {
+    animation: float 2s 2s linear forwards;
+
+} 
+.balloon1 {
+    left:30%;
+    top:48%;
+}
+.balloon2 {
+    left:60%;
+    top:40%;
+}
+.balloon3 {
+    left:80%;
+    top:42%;
+}
+.balloon4 {
+    left:50%;
+    top:40%;
+}
+.balloon5 {
+    left:20%;
+    top:46%;
+}
+.balloon6 {
+    left:40%;
+    top:44%;
+}
+@keyframes float {
+  from {
+    transform: translate(0, 0);
+    opacity:1
+  }
+  to {
+    transform: translate(-10%, -100vh);
+    opacity: 0;
+  }
+}
+
+#count_up_timer {
+    font-size: 200px;
+    color:#dfd9cf;
+    font-weight:700;
+}
+  
+.links > div {
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px
+}
+.links a {
+    color:#F9F5EF;
+    font-size:42px;
+    text-decoration: none;
+}
