@@ -57,6 +57,10 @@ table {
 ::-webkit-scrollbar-thumb {background-color:rgba(0,0,0,.4);border-radius:12px;}
 ::-webkit-scrollbar-track {background-color: rgba(0,0,0,.2);border-radius:12px;}
 
+section {
+    overflow:hidden;
+}
+
 .count {
     display: flex;
     align-items: center;

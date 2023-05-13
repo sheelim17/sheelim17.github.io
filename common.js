@@ -5,9 +5,7 @@
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
-    mobile: {
-      smooth: true
-    },
+    smoothMobile: true 
 
   });
   locoScroll.on("scroll", ScrollTrigger.update);
