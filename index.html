@@ -1,75 +1,87 @@
 <!DOCTYPE html>
-<html lang="ko" data-scroll-direction="vertical">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project871</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body id="body">
-    <div class="wrap" data-scroll-container>
+    <div class="smooth-scroll" data-scroll-container>
         <section class="count" data-scroll-section>
-            <div class="inner" data-scroll data-scroll-call="light" data-scroll-offset="60%" data-scroll-repeat>
-                <span class="day1" data-scroll  data-scroll-speed="1">2023.04.13</span>
+            <div class="inner">
+                <span class="day1" data-scroll data-scroll-speed="1">2023.04.13</span>
                 <span class="day2" data-scroll data-scroll-speed="2">1988.02.13</span>
                 <span class="day3" data-scroll data-scroll-speed="4">2023.04.13</span>
                 <span class="day4" data-scroll data-scroll-speed="5">2023.04.13</span>
+                <span class="day5" data-scroll data-scroll-speed="1">2023.04.13</span>
+                <span class="day6" data-scroll data-scroll-speed="2">1988.02.13</span>
+                <span class="day7" data-scroll data-scroll-speed="4">2023.04.13</span>
+                <span class="day8" data-scroll data-scroll-speed="5">2023.04.13</span>
+                <span class="day9" data-scroll data-scroll-speed="1">2023.04.13</span>
+                <span class="day10" data-scroll data-scroll-speed="2">1988.02.13</span>
+                <span class="day11" data-scroll data-scroll-speed="4">2023.04.13</span>
+                <span class="day12" data-scroll data-scroll-speed="5">2023.04.13</span>
+                <span class="day13" data-scroll data-scroll-speed="1">2023.04.13</span>
+                <span class="day14" data-scroll data-scroll-speed="2">1988.02.13</span>
+                <span class="day15" data-scroll data-scroll-speed="4">2023.04.13</span>
+                <span class="day16" data-scroll data-scroll-speed="5">2023.04.13</span>
+                <span class="day17" data-scroll data-scroll-speed="1">2023.04.13</span>
+                <span class="day18" data-scroll data-scroll-speed="2">1988.02.13</span>
+                <span class="day19" data-scroll data-scroll-speed="4">2023.04.13</span>
+                <span class="day20" data-scroll data-scroll-speed="5">2023.04.13</span>
             </div>
         </section>
-        <section class="description" data-scroll-section >
-            <div class="text" data-scroll data-scroll-call="dark" data-scroll-offset="60%" data-scroll-repeat>
-                <h1>Project871</h1>
-                <div class="scroll__text">
-                    <span>project 871에</span>
-                    <span> 대한 간략한 설명</span>
-                    <span>project 871에</span>
-                    <span> 대한 간략한 설명</span>
-                    <span>project 871에</span>
-                    <span> 대한 간략한 설명</span>
-                    <span>project 871에</span>
-                    <span> 대한 간략한 설명</span>
-                    <span>project 871에</span>
-                    <span> 대한 간략한 설명</span>
-                    <span>project 871에</span>
-                    <span> 대한 간략한 설명</span>
+        <section class="description" data-scroll-section>
+            <div class="inner" id="slogan" >
+                <div data-scroll data-scroll-sticky data-scroll-target="#slogan" >
+                    <h1 class="slogan">
+                        <span class="text1">오늘,</span>
+                        <span class="text2"> 당신 덕분에</span>
+                        <br>
+                        <span class="text3"><em>871명 중 한 아이</em>의</span>
+                        <br>
+                        <span class="text4">시간이</span>
+                        <span class="text5"> 흐르기</span>
+                        <span class="text6"> 시작했습니다.</span>
+                    </h1>
+                    <div class="sub_desc">
+                        <p>2023년 현재 871명의 아이들이 장기 실종되어 있습니다.(*22년 5월 기준)<br>‘시간’은 실종 아동 가족들의 인터뷰에서 가장 많이 반복되는 표현입니다.<br>그날 이후, 그들의 시간은 그곳에 고여 있습니다. </p>
+        
+                        <p>하지만 오늘, 당신 덕분에 한 아이의 시간이 흐르기 시작했습니다. </p>
+                            
+                        <p>누구에게나 일어날 수 있는 실종 아동 이슈, <br>‘누군가의 이야기’가 아닌 ‘우리의 이야기’로 지속적인 관심 부탁드립니다.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="balloon__sec" data-scroll-section>
-            <div class="balloon-list" data-scroll data-scroll-call="light"  data-scroll-repeat
-            data-scroll-offset="60%" 
-            >
-                <span class="balloon1 balloon"  data-scroll data-scroll-class="animate">
-                    <img src="balloon.svg" alt="">
-                </span>
-                <span class="balloon2 balloon"  data-scroll data-scroll-class="animate">
-                    <img src="balloon.svg" alt="">
-                </span>
-                <span class="balloon3 balloon"  data-scroll data-scroll-class="animate">
-                    <img src="balloon.svg" alt="">
-                </span>
-                <span class="balloon4 balloon"  data-scroll data-scroll-class="animate">
-                    <img src="balloon.svg" alt="">
-                </span>
-                <span class="balloon5 balloon"  data-scroll data-scroll-class="animate">
-                    <img src="balloon.svg" alt="">
-                </span>
-                <span class="balloon6 balloon"  data-scroll data-scroll-class="animate">
-                    <img src="balloon.svg" alt="">
-                </span>
-                <div id="count_up_timer" data-scroll data-scroll-call="countup" data-scroll-offset="50%" >00:00:00</div>
+        <section class="sns" data-scroll-section>
+            <div class="inner">
+                <h2>SNS 인증 참여 안내</h2>
+                <div class="items">
+                    <div class="item">
+                        <span class="photo"><img src="" alt=""></span>
+                        <p class="img-caption">날짜가 보이게 풍선을 찍어주세요</p>
+                    </div>
+                    <div class="item">
+                        <span class="photo"><img src="" alt=""></span>
+                        <p class="img-caption">#project871와 함께 <br>@project_871 계정을 태그해서 인증해주세요!</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="links" data-scroll-section>
-            <div class="inner" data-scroll data-scroll-call="dark"  data-scroll-repeat
-            data-scroll-offset="60%" >
-                <a href="https://instagram.com/project_871?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
-                <a href="http://missingkorea.org/" target="_blank">실종아동찾기협회</a>
+        <section class="contact" data-scroll-section>
+            <div class="inner">
+                <a href="https://instagram.com/project_871?igshid=YmMyMTA2M2Y=" target="_blank"><i class="mdi mdi-instagram"></i>@project871</a>
+                <a href="http://missingkorea.org/" target="_blank"><i class="mdi mdi-web"></i>실종아동찾기협회</a>
             </div>
         </section>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 <script src="common.js"></script>
 </html>

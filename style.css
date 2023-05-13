@@ -2,6 +2,10 @@
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
+html, body {
+    font-family: 'Pretendard', "Apple SD Gothic Neo", sans-serif;
+    font-size: 14px; 
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,7 +25,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    font-family: 'Pretendard', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,134 +57,401 @@ table {
 ::-webkit-scrollbar-thumb {background-color:rgba(0,0,0,.4);border-radius:12px;}
 ::-webkit-scrollbar-track {background-color: rgba(0,0,0,.2);border-radius:12px;}
 
-section[data-scroll-section] {
-    height: calc(100vh);
-    overflow-x:hidden;
-}
-
 .count {
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
+    min-height:1000px;
+    height: 100vh;
+    overflow:none;
 }
 
 .count span {
     font-weight: 700;
     color:#dfd9cf;
     position:absolute;
-    font-size: 50px;
+    font-size: 85px;
 }
-.count .day1 {
-    font-size:100px;
-    left:10%;
-    top:10%;
+.count  .day1 {
+    font-size:120px;
+    left:12%;
+    top:42%;
 }
-.count .day2 {
+.count  .day2 {
     font-size:80px;
     left:60%;
-    top:80%;
+    bottom:26%;
 }
-.count .day3 {
-    font-size:30px;
+.count  .day3 {
+    font-size:55px;
     left:30%;
     top:60%;
 }
 
-.count .day4 {
-    font-size:70px;
+.count  .day4 {
+    font-size:60px;
     left:80%;
     top:60%;
 }
 
-.description {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.count  .day5 {
+    font-size:80px;
+    left:0%;
+    bottom:20%;
+}
+.count .day6 {
+    font-size:80px;
+    left:30%;
+    top:30%;
+}
+.count .day7 {
+    font-size:100px;
+    right:30%;
+    bottom:10%;
 }
 
-.description .text {
-    width:1000px;
-    height:600px;
+.count .day8 {
+    font-size:120px;
+    left:60%;
+    top:20%;
+}
+.count .day9 {
+    font-size:68px;
+    left:60%;
+    top:20%;
+}
+.count .day10 {
+    font-size:80px;
+    left:60%;
+    top:34%;
+}
+.count  .day11 {
+    font-size:80px;
+    left:8%;
+    top:38%;
+}
+.count  .day12 {
+    font-size:110px;
+    right:5%;
+    bottom:20%;
+}
+.count  .day13 {
+    font-size:55px;
+    right:10%;
+    top:40%;
+}
+
+.count  .day14 {
+    font-size:40px;
+    right:24%;
+    top:60%;
+}
+
+.count  .day15 {
+    font-size:60px;
+    left:15%;
+    bottom:20%;
+}
+.count .day16 {
+    font-size:68px;
+    left:20%;
+    top:25%;
+}
+.count .day17 {
+    font-size:80px;
+    left:5%;
+    top:5%;
+}
+
+.count .day18 {
+    font-size:90px;
+    left:60%;
+    top:60%;
+}
+.count .day19 {
+    font-size:50px;
+    left:10%;
+    bottom:30%;
+}
+.count .day20 {
+    font-size:100px;
+    left:-5%;
+    top:20%;
+}
+.description {
+    display:flex;
+    justify-content: center;
+    background-color:#2A6F4A;
+    height: 1900px;
+}
+
+.description .inner, 
+.sns .inner  {
+    max-width:1280px;
+    height: 100%;
+    padding: 240px 0;
+    margin: 0 auto;
+}
+.description .inner > div {
+    height:100%;
 }
 
 .description h1 {
-    font-size:120px;
+    font-size:110px;
+    line-height:1.2em;
     font-weight:700;
-    margin-bottom: 30px;
     color: #F9F5EF
 }
-
-.description .scroll__text span {
-    color: #F9F5EF;
-    font-size: 42px;
-    line-height:52px;
+.description h1 span {
+    opacity: 0;
 }
 
-.balloon__sec{
-    position:relative;
+
+.description .sub_desc {
+    margin-top: 200px;
+    
+}
+
+.description .sub_desc p {
+    color: #fff;
+    line-height: 1.3em;
+    font-size: 40px;
+    margin: 50px 0;
+    opacity:0
+    
+}
+.sns h2 {
+    font-size:80px;
+    color: #1a1a1a;
+    font-weight: 700;
+    margin-bottom:100px;
+}
+
+.sns .items {
+    display:flex;
+    gap :50px;
+
+}
+.sns .photo {
+    display:block;
+    width:600px;
+    height:600px;
+    border: 1px solid #ccc;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.sns .img-caption {
+    margin-top: 30px;
+    text-align:center;
+    font-size:30px;
+    line-height: 42px;
+}
+
+.contact {background-color:#1a1a1a}
+.contact .inner {
+    max-width:1280px;
+    padding: 140px 0;
+    margin: 0 auto;
     display:flex;
     align-items:center;
     justify-content: center;
-}
-.balloon {
-    position:absolute;
-}
-.balloon.animate {
-    animation: float 2s 2s linear forwards;
-
-} 
-.balloon1 {
-    left:30%;
-    top:48%;
-}
-.balloon2 {
-    left:60%;
-    top:40%;
-}
-.balloon3 {
-    left:80%;
-    top:42%;
-}
-.balloon4 {
-    left:50%;
-    top:40%;
-}
-.balloon5 {
-    left:20%;
-    top:46%;
-}
-.balloon6 {
-    left:40%;
-    top:44%;
-}
-@keyframes float {
-  from {
-    transform: translate(0, 0);
-    opacity:1
-  }
-  to {
-    transform: translate(-10%, -100vh);
-    opacity: 0;
-  }
+    gap: 30px;
 }
 
-#count_up_timer {
-    font-size: 200px;
-    color:#dfd9cf;
-    font-weight:700;
-}
-  
-.links > div {
-    width:100%;
-    height: 100%;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    gap: 20px
-}
-.links a {
-    color:#F9F5EF;
-    font-size:42px;
+.contact a {
+    color: #fff;
     text-decoration: none;
+    font-size: 24px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
 }
+
+.mdi {
+    display:inline-block;
+    width:32px;
+    height:32px;
+    color:#fff;
+    background-size:100%;
+}
+.mdi-instagram {
+    background-image:url('instagram.svg');
+}
+.mdi-web {
+    background-image:url('web.svg');
+}
+
+@media (max-width: 720px) {
+    .count {
+        min-height:360px;
+    }
+    
+    .count span {
+        font-size: 48px;
+    }
+    .count  .day1 {
+        font-size:60px;
+        left:12%;
+        top:42%;
+    }
+    .count  .day2 {
+        font-size:40px;
+        left:60%;
+        bottom:26%;
+    }
+    .count  .day3 {
+        font-size:24px;
+        left:30%;
+        top:60%;
+    }
+    
+    .count  .day4 {
+        font-size:30px;
+        left:80%;
+        top:60%;
+    }
+    
+    .count  .day5 {
+        font-size:40px;
+        left:0%;
+        bottom:20%;
+    }
+    .count .day6 {
+        font-size:40px;
+        left:30%;
+        top:30%;
+    }
+    .count .day7 {
+        font-size:50px;
+        right:30%;
+        bottom:10%;
+    }
+    
+    .count .day8 {
+        font-size:60px;
+        left:60%;
+        top:20%;
+    }
+    .count .day9 {
+        font-size:34px;
+        left:60%;
+        top:10%;
+    }
+    .count .day10 {
+        font-size:40px;
+        left:60%;
+        top:34%;
+    }
+    .count  .day11 {
+        font-size:40px;
+        left:8%;
+        top:38%;
+    }
+    .count  .day12 {
+        font-size:55px;
+        right:-2%;
+        bottom:2%;
+    }
+    .count  .day13 {
+        font-size:24px;
+        right:10%;
+        top:50%;
+    }
+    
+    .count  .day14 {
+        font-size:20px;
+        right:24%;
+        top:60%;
+    }
+    
+    .count  .day15 {
+        font-size:30px;
+        left:55%;
+        bottom:20%;
+    }
+    .count .day16 {
+        font-size:24px;
+        left:15%;
+        top:25%;
+    }
+    .count .day17 {
+        font-size:40px;
+        left:5%;
+        top:5%;
+    }
+    
+    .count .day18 {
+        font-size:45px;
+        right:40%;
+        left:auto;
+        top:54%;
+    }
+    .count .day19 {
+        font-size:25px;
+        left:10%;
+        bottom:30%;
+    }
+    .count .day20 {
+        font-size:40px;
+        left:-5%;
+        top:20%;
+    }
+    .description {
+        height: 580px;
+    }
+    
+    .description .inner, 
+    .sns .inner  {
+        padding: 80px 20px;
+    }
+    .description h1 {
+        font-size:30px;
+        line-height:1.2em;
+    }
+    .description .sub_desc {
+        margin-top: 40px; 
+    }
+    
+    .description .sub_desc p {
+        font-size: 18px;
+        margin: 20px 0;   
+    }
+    .sns h2 {
+        font-size:28px;
+        margin-bottom:30px;
+    }
+    
+    .sns .items {
+        flex-direction: column;
+        gap :10px;
+    
+    }
+    .sns .photo {
+        width:100%;
+        height:100%;
+        min-height:150px;
+    }
+    
+    .sns .img-caption {
+        margin-top: 10px;
+        font-size:18px;
+        line-height: 30px;
+    }
+    
+    .contact .inner {
+        max-width:1280px;
+        padding: 40px 0;
+        gap: 15px;
+    }
+    .contact a {
+        font-size: 18px;
+        gap:8px;
+    }
+    
+    .mdi {
+        width:24px;
+        height:24px;
+    }
+  }
