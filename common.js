@@ -28,7 +28,7 @@
     scrollTrigger: {
       trigger: "#slogan",
       start: "top top",
-      end: "+=28%",
+      end: "+=40%",
       scroller: ".smooth-scroll",
       scrub: true
     }
@@ -40,6 +40,10 @@
   .to(".text5", { opacity: 1 }, 4)
   .to(".text6", { opacity: 1 }, 5)
   .to(".sub_desc p", { opacity: 1 }, 6)
+  
+
+  
+
 
 // --- ORANGE PANEL ---
 // gsap.from(".line-2", {
