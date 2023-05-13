@@ -28,7 +28,7 @@
     scrollTrigger: {
       trigger: "#slogan",
       start: "top top",
-      end: "+=40%",
+      end: "+=60%",
       scroller: ".smooth-scroll",
       scrub: true
     }

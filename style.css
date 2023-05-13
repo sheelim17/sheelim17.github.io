@@ -126,7 +126,7 @@ section {
 }
 .count .day9 {
     font-size:68px;
-    left:60%;
+    left:10%;
     top:20%;
 }
 .count .day10 {
@@ -191,14 +191,14 @@ section {
     display:flex;
     justify-content: center;
     background-color:#2A6F4A;
-    height: 1900px;
+    height: 1580px;
 }
 
 .description .inner, 
 .sns .inner  {
     max-width:1280px;
     height: 100%;
-    padding: 240px 0;
+    padding: 180px 0;
     margin: 0 auto;
 }
 .description .inner > div {
@@ -206,7 +206,7 @@ section {
 }
 
 .description h1 {
-    font-size:110px;
+    font-size:80px;
     line-height:1.2em;
     font-weight:700;
     color: #F9F5EF
@@ -217,14 +217,14 @@ section {
 
 
 .description .sub_desc {
-    margin-top: 200px;
+    margin-top: 140px;
     
 }
 
 .description .sub_desc p {
     color: #fff;
     line-height: 1.3em;
-    font-size: 40px;
+    font-size: 36px;
     margin: 50px 0;
     opacity:0
     
