@@ -407,7 +407,7 @@ section {
         top:20%;
     }
     .description {
-        height: 580px;
+        height: 100vh;
     }
     
     .description .inner, 
