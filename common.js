@@ -5,7 +5,9 @@
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
-    smoothMobile: true 
+    mobile: {
+      smooth: true
+    },
 
   });
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -26,7 +28,7 @@
     scrollTrigger: {
       trigger: "#slogan",
       start: "top top",
-      end: "+=30%",
+      end: "+=28%",
       scroller: ".smooth-scroll",
       scrub: true
     }

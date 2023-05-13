@@ -410,14 +410,19 @@ section {
         height: 100vh;
     }
     
-    .description .inner, 
-    .sns .inner  {
-        padding: 80px 20px;
-    }
+    .description .inner{
+        padding: 60px 20px;
+    } 
+    
     .description h1 {
         font-size:30px;
         line-height:1.2em;
     }
+    .description h1 span {
+        display:inline-block;
+        margin: 10px 0;
+    }
+
     .description .sub_desc {
         margin-top: 40px; 
     }
@@ -425,6 +430,9 @@ section {
     .description .sub_desc p {
         font-size: 18px;
         margin: 20px 0;   
+    }
+    .sns .inner  {
+        padding: 50px 20px;
     }
     .sns h2 {
         font-size:28px;
