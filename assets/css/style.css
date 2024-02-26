@@ -283,22 +283,19 @@ body {
     margin: 0 auto;
     background-color: #fff;  
 }
-
-.wrap {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-}
-
-.wrap.bg-gray {
+body.bg-gray {
     background-color: #F3F4F5;
     min-height: 100%;
 }
 
-.wrap.bg-gray .contents {
+body.bg-gray .contents {
     background-color: #F3F4F5;
 }
 
+.wrap {
+    width: 100%;
+    height: 100%;
+}
 .scroll-block  {
     overflow: hidden;
 }
@@ -998,9 +995,15 @@ body.scroll-block .dim {
     width: 100%;
     height: 100%;
     background-color:rgba(255, 255, 255, 0.5);
+    
+}
+.loading .loading-inner {
+    display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 
 }
 @keyframes loading-rotate {

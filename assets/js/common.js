@@ -36,7 +36,6 @@ $(function() {
             $(this).parents('.btm-layer-wrap').removeClass('show');
             $('body').removeClass('scroll-block');
             $(window).scrollTop(scrollPosition);
-            console.log(scrollPosition)
         });
     })
 
