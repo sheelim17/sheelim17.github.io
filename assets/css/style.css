@@ -303,7 +303,10 @@ body {
     overflow: hidden;
 }
 .scroll-block .wrap {
-    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 }
 
 .dim {

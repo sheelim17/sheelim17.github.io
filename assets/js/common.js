@@ -1,6 +1,6 @@
 $(function() {
     const wrapper = $('.wrap')
-    let scrollTop = 0;
+    let scrollPosition = 0;
     
     // 약관 팝업 열기 
     $('.open-layer').each(function() {
@@ -23,10 +23,10 @@ $(function() {
     $('.open-btm-layer').each(function() {
         let target = $(this).attr('data-target');
         $(this).on('click', function() {
-            scrollTop = window.scrollY;
+            scrollPosition = window.scrollY;
             $(target).addClass('show')
             $('body').addClass('scroll-block');
-            wrapper.scrollTop(scrollTop)
+            wrapper.scrollTop(scrollPosition);
         }) 
     })
      // bottom layer 닫기
@@ -35,8 +35,9 @@ $(function() {
         cls.on('click', function() {
             $(this).parents('.btm-layer-wrap').removeClass('show');
             $('body').removeClass('scroll-block');
-            wrapper.scrollTop(scrollTop)
-        }) 
+            $(window).scrollTop(scrollPosition);
+            console.log(scrollPosition)
+        });
     })
 
     $('.pet-item').each(function() {
