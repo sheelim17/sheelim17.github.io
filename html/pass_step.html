@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Pass 포동</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</head>
+<body class="scroll-block">
+    <div class="wrap">
+        <header class="header">
+            <button class="btn-back">
+                <span class="blind">이전</span>
+            </button>
+            <h1 class="header-title">Pet Pass</h1>
+
+        </header>
+        <div class="contents" role="main">
+            <div class="pass-step">
+                <div class="step-title">
+                    <p class="step">STEP 1</p>
+                    <h2>출입정보를 입력해주세요.</h2>
+                    <p class="text">안전한 출입을 위해 보호자 정보를 확인하고 있습니다.</p>
+                    <div class="form-item">
+                        <div class="form-input">
+                            <input type="text" value="010-****-1234" readonly/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-list">
+                    
+                    <div class="form-item">
+                        <div class="form-title">
+                            <span class="title required">보호자 이름</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="보호자 이름을 입력하세요"/>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-title">
+                            <span class="title required">동반 입장 인원 수 선택</span>
+                        </div>
+                        <div class="form-input">
+                            <a role="button" class="open-btm-layer btn-select" data-target="#selectNum"><span class="placeholder">동반 입장할 인원 수 선택(본인포함)</span></a> <!-- 선택 전 -->
+                            <a role="button" class="open-btm-layer btn-select" data-target="#selectNum">1명</a>
+                            <p class="tip-text">본인을 포함하여 동반 입장하는 모든 인원을 선택해주세요.</p> <!-- 선택 후 -->
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="pass-step">
+                <div class="step-title">
+                    <p class="step">STEP 2</p>
+                    <h2>동반 반려동물을<br>모두 선택해주세요.</h2>
+                    <button class="btn-add open-btm-layer" data-target="#petAdd"><span>등록</span></button>
+                </div>
+                <div class="pet-list">
+                    <div class="data-none pet-item">
+                        <p class="data-text"><strong>등록된 반려동물 정보가 없습니다.</strong><br>등록버튼을 눌러 반려동물 정보를 입력해주세요.</p>
+                    </div>
+                    <div class="pet-item">
+                        <span class="flag">본인</span>
+                        <div class="pet-desc">
+                            <p class="pet-name">클루니</p>
+                            <p class="pet-breed">아이리쉬 레드 앤 화이트 셰터</p>
+                            <ul class="pet-detail">
+                                <li>소형</li>
+                                <li>1234523452454</li>
+                            </ul>
+                        </div>
+                        <div class="ctrl">
+                            <a role="button" class="btn-del open-btm-layer" data-target="#DelAlert">삭제</a>
+                            <a role="button" class="btn-sel"><span>선택</span></a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="btn-area">
+                <a href="qr.html" class="btn-point round">출입 QR 발급받기</a>
+            </div>
+            <div class="message-bar"> <p>반려동물이 등록되었습니다.</p></div>
+        </div>
+
+        <div class="btm-layer-wrap show" id="petAdd">
+            <div class="btm-layer">
+                <h3 class>반려동물 정보 등록</h3>
+                <div class="form-list">
+                    <div class="form-item">
+                        <div class="form-title">
+                            <span class="title required">등록자 이름</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="국가동물등록 등록자 이름"/>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-title">
+                            <span class="title required">국가동물등록번호</span>
+                            <a role="button" class="btn-link">동물등록번호 조회</a>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="15자리 국가동물등록번호 입력"/>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-title">
+                            <span class="title required">반려동물 크기 구분</span>
+                            <div class="tooltip">
+                                <a role="button" class="btn-tooltip"><span class="blind">툴팁</span></a>
+                                <div class="layer-tooltip">
+                                    <p class="text">방문하신 장소의 입장 기준을 확인<br>해주세요</p>
+                                    <button class="btn-cls"><span class="blind">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <ul class="radio-btn-list"> 
+                                <li>
+                                    <input type="radio" id="sm" name="size"><label for="sm">소형견</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="md" name="size"><label for="md">중형견</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="lg" name="size"><label for="lg">대형견</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-title">
+                            <span class="title required">등록자와의 관계</span>
+                            <div class="tooltip">
+                                <a role="button" class="btn-tooltip"><span class="blind">툴팁</span></a>
+                                <div class="layer-tooltip">
+                                    <p class="text">동물등록하신분과의 관계를 선택<br>해주세요</p>
+                                    <button class="btn-cls"><span class="blind">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <ul class="radio-btn-list"> 
+                                <li>
+                                    <input type="radio" id="self" name="relation"><label for="self">본인</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="fam" name="relation"><label for="fam">가족</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="frd" name="relation"><label for="frd">지인</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="etc" name="relation"><label for="etc">기타</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-area group">
+                    <button class="btn-basic">취소</button>
+                    <button class="btn-point layer-cls" onclick="showMessageBox()">등록</button>
+                </div>
+                <button class="btn-cls layer-cls"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+        <div class="btm-layer-wrap select" id="selectNum">
+            <div class="btm-layer">
+                <p class="select-title">동반 입장 인원 수 선택</p>
+                <ul class="select-list">
+                    <li>
+                        <input type="radio" id="num1" name="company"><label for="num1">1명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num2" name="company"><label for="num2">2명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num3" name="company"><label for="num3">3명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num4" name="company"><label for="num4">4명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num5" name="company"><label for="num5">5명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num6" name="company"><label for="num6">6명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num7" name="company"><label for="num7">7명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num8" name="company"><label for="num8">8명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num9" name="company"><label for="num9">9명</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="num10" name="company"><label for="num10">10명</label>
+                    </li>
+                </ul>
+                <div class="btm-fixed">
+                    <div class="btn-area">
+                        <button class="btn-point round layer-cls" data-target="#selectNum">선택</button>
+                    </div>
+                </div>
+                <button class="btn-cls layer-cls" data-target="#selectNum"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+        <div class="btm-layer-wrap alert" id="DelAlert">
+            <div class="btm-layer">
+                <div class="alert-desc">
+                    <p class="title">반려동물 정보를 삭제하시겠습니까?</p>
+                    <p class="text">삭제한 정보는 복구할 수 없습니다.</p>
+                </div>
+                <div class="btn-area col2">
+                    <button class="btn-basic layer-cls" data-target="#DelAlert">취소</button>
+                    <button class="btn-point layer-cls" data-target="#DelAlert">삭제</button>
+                </div>
+                <button class="btn-cls layer-cls" data-target="#selectNum"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+</html>
