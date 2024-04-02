@@ -388,23 +388,23 @@ body {
     right: 20px;
     top: 8px;
 }
-
+.terms .terms-header {
+    position:fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 40px;
+    background-color:#fff;
+}
 .terms .terms-title {
     font-size: 16px;
     font-weight: 600;
-    height: 40px;
     padding: 8px 20px;
     line-height: 24px;
-    position:sticky;
-    top:0;
-    left: 0;
-    background-color:#fff;
 }
 
 .terms .terms-text {
-    padding: 20px;
-    overflow: auto;
-    height:calc(100% - 40px - 84px);
+    padding: 60px 20px 90px;
     line-height: 22px;
 }
 
@@ -414,7 +414,18 @@ body {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    transition:all 300ms;
 }
+.btm-fixed.up {
+    bottom: 0;
+}
+
+.btm-fixed.down {
+   bottom: -100%;
+}
+
+
+
 
  .btm-fixed:before {
     content: '';

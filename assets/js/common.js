@@ -8,6 +8,27 @@ $(function() {
             $select.toggleClass('active')
         }) 
     })
+    if($('.btm-fixed').length) {
+        var lastScrollTop = 0, delta = 5;
+        $(window).scroll(function(){
+            var nowScrollTop = $(this).scrollTop();
+            var scrollHeight =  $('body').prop('scrollHeight')
+            var end = nowScrollTop + $('body').innerHeight() == scrollHeight
+            if(!end) {
+                if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
+                    if (nowScrollTop > lastScrollTop){
+                        $('.btm-fixed').removeClass('up').addClass('down')
+                    } else if((nowScrollTop <= lastScrollTop)){
+                        $('.btm-fixed').removeClass('down').addClass('up')
+                    }
+                lastScrollTop = nowScrollTop;
+                } 
+            } else {
+                $('.btm-fixed').removeClass('down').addClass('up')
+            }
+        });
+    }
+    
 })
 
 function openLayer(layerId) {
