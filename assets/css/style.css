@@ -187,6 +187,7 @@ input[type="radio"]:checked + label:before {
     background: url('../images/arr_select.png') no-repeat calc(100% - 12px) 50%;
     background-size: 24px;
     appearance: none;
+    color: #121F34;
 }
 .custom-select.active {
     background-image: url('../images/arr_select_active.png');    
