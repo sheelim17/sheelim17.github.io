@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Pass</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a href="agree.html" class="btn-back">
+                <span class="blind">이전</span>
+            </a>
+            <h1 class="header-title">Pet Pass</h1>
+
+        </header>
+        <div class="contents" role="main">
+            <div class="content-title">
+                <h2>출입정보를 입력해주세요.</h2>
+                <p class="text">안전한 출입을 위해 보호자 정보를 확인하고 있습니다.</p>
+            </div>
+            <div class="form-wrap">
+                <div class="form-list">
+                    <div class="form-item">
+                        <div class="item-label">
+                            <span class="title required">보호자(동물 등록자) 이름</span>
+                        </div>
+                        <div class="item-input">
+                            <input type="text" placeholder="보호자 이름을 입력하세요"/>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-label">
+                            <span class="title required">국가동물등록번호</span>
+                        </div>
+                        <div class="item-input">
+                            <input type="text" placeholder="국가동물등록번호 입력하세요"/>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-label">
+                            <span class="title required">핸드폰번호</span>
+                        </div>
+                        <div class="item-input tel">
+                            <input type="tel">
+                            <input type="tel">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-label">
+                            <span class="title required">체고</span>
+                        </div>
+                        <div class="item-input">
+                            <select name="" id="" class="custom-select">
+                                <option value="" disabled>체고를 선택하세요</option>
+                                <option value="">소형견</option>
+                                <option value="">중형견</option>
+                                <option value="">대형견</option>
+                            </select>
+                           
+                        </div>
+                        <p class="tip-text">반려견의 체고를 선택해주세요.</p>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-label">
+                            <span class="title required">동반 입장 인원 수 선택</span>
+                        </div>
+                        <div class="item-input">
+                            <select name="" id="" class="custom-select">
+                                <option value="">1명</option>
+                                <option value="">2명</option>
+                                <option value="">3명</option>
+                            </select>
+                        </div>
+                        <p class="tip-text">본인을 포함하여 동반 입장하는 모든 인원을 선택해주세요.</p>
+                    </div>
+                </div>
+                <div class="check-history">
+                    <div class="custom-checkbox"><input type="checkbox" class="checkbox" id="history"><label for="history">입력한 정보를 다음에도 사용</label></div>
+                 </div>
+            </div>
+            <div class="btm-fixed">
+                <div class="btn-area">
+                    <a role="button" class="btn-point round" onclick="openLayer('chkInfoError')">출입 QR 발급받기</a>
+                </div>
+            </div>
+        </div>
+        <div class="layer-popup" id="chkInfoError">
+            <div class="layer-content">
+                <div class="layer-title">
+                    <h4 class="title">입력하신 정보를 확인할 수 없습니다.</h4>
+                    <p class="text">등록된 반려동물 정보가 일치 하지 않습니다.
+                        반려동물 정보를 다시 확인해주시기 바랍니다.</p>
+                </div>
+                <div class="btn-area col">
+                    <button class="btn-point" onclick="closeLayer('chkInfoError')">정보 다시 입력하기</button>
+                    <button class="btn-basic" onclick="location.href='pass_form_temp.html'">임시 QR발급</button>
+                </div>
+                <button class="btn-cls layer-cls" onclick="closeLayer('chkInfoError')"><span class="blind">닫기</span></button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
